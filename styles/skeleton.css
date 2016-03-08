@@ -1,0 +1,606 @@
+/* line 9, skeleton.scss */
+section {
+  width: 100%;
+  clear: both; }
+
+/* line 13, skeleton.scss */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 0 0 1.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 25, skeleton.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 28, skeleton.scss */
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #666; }
+
+/* Typography */
+/* line 38, skeleton.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 400; }
+
+/* line 43, skeleton.scss */
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem; }
+
+/* line 44, skeleton.scss */
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem; }
+
+/* line 45, skeleton.scss */
+h3 {
+  font-size: 2.6rem;
+  line-height: 1;
+  letter-spacing: -.1rem; }
+
+/*h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }*/
+/* Larger than phablet */
+/* line 60, skeleton.scss */
+p {
+  margin-top: 0;
+  color: #666; }
+
+/* Links */
+/* line 67, skeleton.scss */
+a {
+  color: #4ac1d5; }
+
+/* line 69, skeleton.scss */
+a:hover {
+  color: #348491; }
+
+/* Buttons
+____________________________*/
+/* line 75, skeleton.scss */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #666;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  /*border-radius: 4px;*/
+  border: 1px solid #666;
+  cursor: pointer;
+  transition: color 0.5s ease, border-color 0.5s ease;
+  box-sizing: border-box; }
+
+/* line 98, skeleton.scss */
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #4ac1d5;
+  border-color: #4ac1d5;
+  outline: 0; }
+
+/* line 111, skeleton.scss */
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #fff;
+  background-color: #4ac1d5;
+  border-color: #4ac1d5; }
+
+/* line 119, skeleton.scss */
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #fff;
+  background-color: #348491;
+  border-color: #348491; }
+
+/* Forms*/
+/* line 136, skeleton.scss */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  /*border-radius: 4px;*/
+  box-shadow: none;
+  box-sizing: border-box; }
+
+/* Removes awkward default styles on some inputs for iOS */
+/* line 153, skeleton.scss */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* line 164, skeleton.scss */
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+/* line 168, skeleton.scss */
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #4ac1d5;
+  outline: 0;
+  /*background-color: rgb(255, 246, 246);*/ }
+
+/* line 181, skeleton.scss */
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 300; }
+
+/* line 186, skeleton.scss */
+fieldset {
+  padding: 0;
+  border-width: 0; }
+
+/* line 189, skeleton.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+
+/* line 192, skeleton.scss */
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+/* Lists*/
+/* line 199, skeleton.scss */
+ul {
+  list-style: circle inside; }
+
+/* line 201, skeleton.scss */
+ol {
+  list-style: decimal inside; }
+
+/* line 203, skeleton.scss */
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+
+/* line 206, skeleton.scss */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+
+/* line 212, skeleton.scss */
+li {
+  margin-bottom: 0rem; }
+
+/* Code*/
+/* line 217, skeleton.scss */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+
+/* line 225, skeleton.scss */
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+/* Spacing*/
+/* line 234, skeleton.scss */
+button,
+.button {
+  margin-bottom: 1rem; }
+
+/* line 237, skeleton.scss */
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+
+/* line 242, skeleton.scss */
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
+/* Misc */
+/* line 258, skeleton.scss */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+/*# sourceMappingURL=skeleton.css.map */
+
+::-moz-selection {
+  background: #4ac1d5;
+  /* Gecko Browsers */
+  color: white; }
+
+::selection {
+  background: #4ac1d5;
+  /* WebKit/Blink Browsers */
+  color: white; }
+
+/*logo font*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?n3nhso");
+  src: url("fonts/icomoon.eot?#iefixn3nhso") format("embedded-opentype"), url("fonts/icomoon.ttf?n3nhso") format("truetype"), url("fonts/icomoon.woff?n3nhso") format("woff"), url("fonts/icomoon.svg?n3nhso#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-logo:before {
+  font-size: 4rem;
+  padding: 0;
+  line-height: 5.5rem;
+  color: #111;
+  content: "\e600";
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease;
+          transition: color 0.5s ease; }
+
+.icon-logo:hover:before {
+  color: #4ac1d5; }
+
+.icon-flickr2:before {
+  content: "\e601"; }
+
+.icon-dribbble:before {
+  content: "\e604"; }
+
+.icon-github:before {
+  content: "\e602"; }
+
+.icon-linkedin:before {
+  content: "\e603"; }
+
+.style_guide {
+  margin-top: 3rem; }
+
+/*/
+/////////////////////////////////////*/
+h3 {
+  font-weight: 300;
+  font-size: 3.5rem; }
+
+.jumbotron {
+  background-size: cover;
+  /*width: 100%;*/
+  max-height: 100vh;
+  max-width: 100%;
+  margin-bottom: 4rem;
+  position: relative;
+  background-position: 0;
+  position: relative;
+  overflow: hidden; }
+
+/***********navigation bar*************/
+.nav-bar {
+  height: 6rem
+  /*background-color: red;*/ }
+
+#logo {
+  float: left;
+  height: 6rem;
+  position: relative;
+  margin-left: 1rem; }
+  #logo a {
+    text-decoration: none;
+    line-height: 4.2rem; }
+
+.nav-menu {
+  margin: 0;
+  float: right; }
+  .nav-menu li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+    .nav-menu li a {
+      text-transform: uppercase;
+      color: #111;
+      text-decoration: none;
+      font-weight: 400;
+      padding: 0;
+      -webkit-transition: color 0.5s ease;
+              transition: color 0.5s ease;
+      line-height: 6rem; }
+      .nav-menu li a:hover {
+        color: #4ac1d5; }
+
+/*http://bradsknutson.com/blog/css-sliding-underline/*/
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px; }
+  .sliding-middle-out::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 0.2rem;
+    width: 0;
+    background: transparent;
+    -webkit-transition: width 0.5s ease, background-color 0.5s ease;
+            transition: width 0.5s ease, background-color 0.5s ease; }
+  .sliding-middle-out:hover:after {
+    width: 100%;
+    background: #4ac1d5; }
+
+.activated {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+  color: #4ac1d5 !important; }
+  .activated::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 0.2rem;
+    width: 100%;
+    background: #4ac1d5; }
+
+/**********************************************************/
+.jumbotron_section .jumbotron video {
+  height: 100vh;
+  width: auto;
+  background-size: cover; }
+.jumbotron_section .jumbotron .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%);
+  /* Safari */
+  transform: translate(-50%, -50%);
+  width: 33%;
+  min-width: 50rem
+  /*width:100%;*/ }
+  .jumbotron_section .jumbotron .text-container .grid .col-3 img {
+    margin-top: -1.2rem; }
+
+/**********************************************************/
+.whatido .container {
+  padding: 0; }
+  .whatido .container h3 {
+    text-align: center;
+    width: 100%; }
+  .whatido .container .grid .col-4 {
+    padding-right: 0; }
+    .whatido .container .grid .col-4 img {
+      display: block;
+      width: 10rem;
+      margin: 0 auto; }
+  .whatido .container .grid h4 {
+    text-align: center; }
+  .whatido .container .grid p {
+    width: 20rem;
+    margin: auto; }
+
+/**********************************************************/
+.project,
+.portfolio {
+  background-image: url("../img/greyzz/greyzz.png");
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  opacity: 1; }
+  .project h3,
+  .portfolio h3 {
+    margin-bottom: 3rem;
+    text-align: center; }
+  .project .container .grid .col-4:last-of-type,
+  .portfolio .container .grid .col-4:last-of-type {
+    padding-right: 1.5rem; }
+  .project .container .grid .col-4,
+  .portfolio .container .grid .col-4 {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+            transition: opacity 0.5s ease; }
+  .project .container .grid .unselected,
+  .portfolio .container .grid .unselected {
+    opacity: 0.5;
+    -webkit-transition: opacity 0.5s ease;
+            transition: opacity 0.5s ease; }
+  .project .project_item,
+  .portfolio .project_item {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    background-color: white;
+    height: auto;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+    .project .project_item .title,
+    .portfolio .project_item .title {
+      font-size: 1.8rem;
+      margin: 0;
+      padding: 0 1rem; }
+    .project .project_item .type,
+    .portfolio .project_item .type {
+      color: #c8c8c8;
+      margin-bottom: 0;
+      padding: 0 1rem; }
+    .project .project_item img,
+    .portfolio .project_item img {
+      width: 100%; }
+
+.project_item,
+.project_item .title,
+.project_item .type {
+  cursor: pointer; }
+
+footer {
+  height: 5rem;
+  width: 100%;
+  background-color: white; }
+  footer .container {
+    padding: 0 1.5rem; }
+    footer .container p {
+      display: inline-block;
+      font-size: 1.2rem;
+      line-height: 5rem;
+      margin: 0;
+      width: 17rem; }
+      footer .container p a {
+        font-size: 1.2rem; }
+    footer .container a {
+      display: inline-block;
+      float: right;
+      margin-right: 3rem;
+      font-size: 2rem;
+      line-height: 5rem;
+      color: #666;
+      text-decoration: none;
+      -webkit-transition: color 0.5s ease;
+              transition: color 0.5s ease; }
+      footer .container a:hover {
+        color: #4ac1d5; }
+      footer .container a:first-of-type {
+        margin-right: 0; }
+
+/****************************/
+@media (min-width: 800px) {
+  .jumbotron_section .jumbotron video {
+    height: auto;
+    width: 100%; } }
+@media (max-width: 960px) {
+  .type {
+    height: 5rem; } }
+@media (max-width: 720px) {
+  .whatido .grid .col-4 p {
+    width: 18rem; } }
+@media (max-width: 640px) {
+  .whatido .grid .col-4 p {
+    width: 15rem; }
+
+  .jumbotron_section .jumbotron .text-container {
+    /*background-color: red;*/
+    text-align: center;
+    min-width: 35rem; }
+    .jumbotron_section .jumbotron .text-container .grid .col-9 h2 {
+      font-size: 3.6rem;
+      line-height: 1.2; }
+    .jumbotron_section .jumbotron .text-container .grid .col-3,
+    .jumbotron_section .jumbotron .text-container .grid .col-9 {
+      width: 100%;
+      padding-bottom: 0; }
+    .jumbotron_section .jumbotron .text-container .grid .col-3 img {
+      width: 10rem; }
+
+  .project .container .grid .col-4,
+  .portfolio .container .grid .col-4 {
+    width: 50%; }
+    .project .container .grid .col-4:last-of-type,
+    .portfolio .container .grid .col-4:last-of-type {
+      display: none; }
+
+  .portfolio .container .grid .col-4:last-of-type {
+    display: block; } }
+@media (max-width: 565px) {
+  .whatido {
+    padding-bottom: 1.5rem; }
+    .whatido .grid .col-4 {
+      width: 100%; }
+      .whatido .grid .col-4 p {
+        width: 22rem; }
+
+  .project .container .grid .col-4 .type,
+  .portfolio .container .grid .col-4 .type {
+    display: none; } }
+@media (max-width: 400px) {
+  .nav-menu li a {
+    font-size: 1.3rem
+    /*background-color: red;*/ } }
