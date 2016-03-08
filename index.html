@@ -8,40 +8,45 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="stylesheet" href="styles/skeleton.css">
+  <!-- <link rel="stylesheet" href="styles/logo_font.css"> -->
+
 </head>
 
 <body>
   <main>
     <header>
-      <h1>
-            Kilovolt Blog!
-          </h1>
-      <p>The shocking power of static pages</p>
-    </header>
-    <nav>
-      <ul>
-        <li>Articles</li>
-        <li>About (coming soon!)</li>
-        <li><a href="http://twitter.com/brookr" target="_blank">Twitter</a></li>
-        <li><a href="http://github.com/brookr" target="_blank">Github</a></li>
-      </ul>
-    </nav>
-    <section id="articles">
-      <article class="template" data-category="cat">
+    <div class="container">
+      <div class="nav-bar">
+        <div id="logo">
+          <a href="index.html" class="icon-logo sliding-middle-out">
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="sliding-middle-out" href="about.html">About</a></li>
+          <li><a class="sliding-middle-out" href="">GitHub</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+<hr>
+    <section id="projects">
+      <project class="template" data-category="php">
         <header>
           <h1>Title</h1>
           <div class="byline">
-            By <address><a href="">Author Name</a></address> published
-            <time pubdate datetime="2000-01-01">Publish Time</time>
+            Project Type: <p class="project-type">php</p>
           </div>
         </header>
-        <section class="article-body"></section>
-      </article>
+        <section class="project-description"></section>
+        <p>published
+        <time pubdate datetime="2000-01-01">Publish Time</time></p>
+      </project>
     </section>
     </div>
   </main>
   <footer>
-    &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
+    &copy; 2016 Marcus
   </footer>
 
   <!-- // DONE: Include any/all needed script tags -->

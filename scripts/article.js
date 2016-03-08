@@ -1,26 +1,24 @@
-var articles = [];
+var projects = [];
 
-function Article (opts) {
+function Project (opts) {
   // DONE: Use the js object passed in to complete this contructor function:
   // Save ALL the properties of `opts` into `this`.
-  this.author = opts.author;
+
   this.title = opts.title;
-  this.category = opts.category;
-  this.authorUrl = opts.authorUrl;
+  this.type = opts.type;
+
   this.publishedOn = opts.publishedOn;
   this.body = opts.body;
 }
 
-Article.prototype.toHtml = function() {
-  var $newArticle = $('article.template').clone();
+Project.prototype.toHtml = function() {
+  var $newProject = $('project.template').clone();
 
-  $newArticle.attr('data-category', this.category);
-  $newArticle.find('h1').attr('data-title', this.title);
-  $newArticle.find('h1').html(this.title);
-  $newArticle.find('a').attr('data-author', this.author);
-  $newArticle.find('a').html(this.author);
-  $newArticle.attr('data-authorUrl', this.authorUrl);
-  $newArticle.find('.article-body').html(this.body);
+  $newProject.attr('data-category', this.type);
+  $newProject.find('h1').attr('data-title', this.title);
+  $newProject.find('h1').html(this.title);
+  $newProject.find('.project-type').html(this.type);
+  $newProject.find('.project-description').html(this.body);
 
   // DONE: Use jQuery to fill in the template with properties
   // from this particular Article instance. We need to fill in:
@@ -28,17 +26,17 @@ Article.prototype.toHtml = function() {
   // publication date.
 
   // Include the publication date as a 'title' attribute to show on hover:
-  $newArticle.find('time[pubdate]').attr('title', this.publishedOn)
+  $newProject.find('time[pubdate]').attr('title', this.publishedOn)
 
 
   // Display the date as a relative number of "days ago":
-  $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago')
+  $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago')
 
-  $newArticle.append('<hr>');
+  $newProject.append('<hr>');
 
   // DONE: This cloned article is no longer a template, so we should remove that class...
-  $newArticle.removeClass('template');
-  return $newArticle;
+  $newProject.removeClass('template');
+  return $newProject;
 }
 
 rawData.sort(function(a,b) {
@@ -46,9 +44,11 @@ rawData.sort(function(a,b) {
 });
 
 rawData.forEach(function(ele) {
-  articles.push(new Article(ele));
+  // console.log(ele);
+  projects.push(new Project(ele));
 })
 
-articles.forEach(function(a){
-  $('#articles').append(a.toHtml())
+projects.forEach(function(a){
+  console.log(a);
+  $('#projects').append(a.toHtml());
 });

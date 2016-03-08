@@ -1,8 +1,12 @@
 body {
-  padding: 1em;
+  /*padding: 1em;*/
 }
 
 main {
+
+}
+
+#projects{
   margin: auto;
   width: 80%;
 }
