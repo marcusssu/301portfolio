@@ -245,11 +245,24 @@ h3 {
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
     /* line 261, main.scss */
-    .project .project_item .title,
-    .portfolio .project_item .title {
+
+    .portfolio .project_item .title{
       font-size: 1.8rem;
+      font-weight: 400;
+    }
+
+
+    .project .project_item .title,
+    .portfolio .project_item .title,
+    .portfolio .project_item .content
+     {
+      /*font-size: 1.8rem;*/
       margin: 0;
       padding: 0 1rem; }
+
+      .portfolio .project_item .content{
+        padding-top: 1.5rem;
+      }
     /* line 268, main.scss */
     .project .project_item .type,
     .portfolio .project_item .type {
