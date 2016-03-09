@@ -1,0 +1,53 @@
+@media (max-width: 45rem) {
+  /* line 5, meia.scss */
+  .whatido .grid .col-4 p {
+    width: 18rem; } }
+@media (max-width: 40rem) {
+  /* line 10, meia.scss */
+  .whatido .grid .col-4 p {
+    width: 15rem; }
+
+  /* line 13, meia.scss */
+  .section .jumbotron .text-container {
+    /*background-color: red;*/
+    text-align: center;
+    min-width: 30rem; }
+    /* line 18, meia.scss */
+    .section .jumbotron .text-container .grid .col-9 h2 {
+      font-size: 3.6rem;
+      line-height: 1.2; }
+    /* line 22, meia.scss */
+    .section .jumbotron .text-container .grid .col-3, .section .jumbotron .text-container .grid .col-9 {
+      width: 100%;
+      padding-bottom: 0; }
+    /* line 26, meia.scss */
+    .section .jumbotron .text-container .grid .col-3 img {
+      width: 10rem; }
+
+  /* line 31, meia.scss */
+  .project .container .grid .col-4 {
+    width: 50%; }
+    /* line 33, meia.scss */
+    .project .container .grid .col-4:last-of-type {
+      display: none; } }
+@media (max-width: 35rem) {
+  /* line 39, meia.scss */
+  .whatido {
+    padding-bottom: 1.5rem; }
+    /* line 41, meia.scss */
+    .whatido .grid .col-4 {
+      width: 100%; }
+      /* line 43, meia.scss */
+      .whatido .grid .col-4 p {
+        width: 22rem; }
+
+  /* line 48, meia.scss */
+  .project .container .grid .col-4 .type {
+    display: none; } }
+@media (max-width: 25rem) {
+  /* line 56, meia.scss */
+  .nav-menu li a {
+    font-size: 1.3rem;
+    /*background-color: red;*/ } }
+
+/*# sourceMappingURL=meia.css.map */

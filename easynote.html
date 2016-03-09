@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Marcus Su</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,300,600" rel="stylesheet" type="text/css"> -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/easynote.css">
+  <!-- <link rel="stylesheet" href="css/timeline.css"> -->
+  <!-- <link rel="stylesheet" href="css/mytimeline.css"> -->
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="img/web_icon.png">
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav-bar">
+        <div id="logo">
+          <a href="index.html" class="icon-logo sliding-middle-out">
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="sliding-middle-out" href="about.html">About</a></li>
+          <li><a class="sliding-middle-out" href="portfolio.html">Portfolio</a></li>
+          <li><a class="sliding-middle-out" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section class="juu">
+    <div class="container">
+      <div class="grid">
+        <div class="hidden">
+          <img src="img/easynote/hide.png" alt="easynote_hide" />
+        </div>
+        <div class="col-6 text">
+          <div class="text-container">
+            <h3>Web App & Javascript Development</h3>
+            <p>
+              To-do-list App
+            </p>
+            <p class="time">
+              2015 Individal Project
+            </p>
+            <p class="intro">
+            EasyNote is a rebuilt web application of the native app <a href="http://realmacsoftware.com/clear/" target="_blank">CLEAR</a>, I developed and added some useful features upon on it and and made it works on web browser.</p>
+            <a href="http://marcussu381.github.io/EasyNoteF/" target="_blank" class="button view_on_git">View on GitHub</a>
+            <ul class="tags">
+              <li><a class="tag">HTML/CSS</a></li>
+              <li><a class="tag">UX Design</a></li>
+              <li><a class="tag">jQuery</a></li>
+              <li><a class="tag">Hammer.js</a></li>
+              <li><a class="tag">sklad.js</a></li>
+              <li><a class="tag">CLNDR.js</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 phone">
+          <div class="img">
+            <video autoplay loop muted>
+              <source src="img/easynote/demo.mp4" type="video/mp4">
+              <source src="img/easynote/demo.ogg" type="video/ogg">
+              <source src="img/easynote/demo.webm" type="video/webm">
+            </video>
+          </div>
+          <!-- <img src="img/easynote_phonesize.png" alt="easynote_honesize" /> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="design_cycle">
+    <div class="container">
+      <h3>Design Cycle</h3>
+      <div class="mytimeline">
+        <div class="spine">
+        </div>
+        <div class="leftrow">
+          <div class="pane">
+            <h5 class="timeline-title">HTML Structure</h5>
+            <img class="clickable_image" src="img/easynote/DOM.jpg" alt="DOM"/>
+            <p>Designing the HTML & CSS not only for its appearance, but also as an appropriate structure for the javascript to retrieve and manipulate.</p>
+          </div>
+          <div class="dot">
+          </div>
+        </div>
+        <div class="rightrow">
+          <div class="pane">
+            <h5 class="timeline-title">Hand Guesture</h5>
+            <img class="clickable_image" src="img/easynote/guesture.gif" alt="juesture"/>
+            <p><a href="http://hammerjs.github.io/" target="_blank">Hammer.js</a> is a excellent library that allows web browser to detect hand gesture on mobile device, in this project I used drag and swap detection to capture user's input and make corresponding reaction to each gesture.</p>
+          </div>
+          <div class="dot">
+          </div>
+        </div>
+        <div class="leftrow">
+          <div class="pane">
+            <h5 class="timeline-title">Calendar</h5>
+            <img class="clickable_image" src="img/easynote/calendar.png" alt="calendar"/>
+            <p>One of the new features I added in EasyNote is that it has a calendar (<a href="http://kylestetz.github.io/CLNDR/" target="_blank">CLNDR.js</a>) view for people to plan their task ahead of time, and give a hint (the orange line) under the day number.</p>
+          </div>
+          <div class="dot">
+          </div>
+        </div>
+        <div class="rightrow">
+          <div class="pane">
+            <h5 class="timeline-title">Data Persistence</h5>
+            <img class="clickable_image" src="img/easynote/data.png" alt="development"/>
+            <p>Lastly, I used the sklad.js for data persistence, some tricks were used in here to store the complex data structure. I convert all data to a string and store in indexedDB(<a href="http://staypositive.ru/sklad/">sklad.js</a>) and convert it back when the user open it the next time.</p>
+          </div>
+          <div class="dot">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="popout" style="display: none; opacity: 0; ">
+    <div class="worksclose">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="image_container">
+      <img src="img/development.png" alt="" />
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+        <p>© Marcus Su 2015  ·<a href="style_guide.html">Style guide</a></p>
+
+
+        <!-- <a href="index.html" class="icon-flickr2"></a> -->
+        <a href="index.html" class="icon-dribbble"></a>
+        <a href="index.html" class="icon-github"></a>
+        <a href="index.html" class="icon-linkedin"></a>
+
+    </div>
+
+  </footer>
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/juu.js"></script>
+</body>
+
+</html>

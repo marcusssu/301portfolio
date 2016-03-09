@@ -1,0 +1,61 @@
+/* line 4, about.scss */
+.about {
+  padding: 0 1.5rem; }
+  /* line 6, about.scss */
+  .about .container {
+    padding: 0; }
+    /* line 8, about.scss */
+    .about .container .text-container {
+      max-width: 60rem;
+      margin: 5rem auto; }
+      /* line 16, about.scss */
+      .about .container .text-container p a {
+        cursor: help; }
+
+/* line 22, about.scss */
+.skills {
+  padding: 0 1.5rem;
+  background-image: url("../img/greyzz/greyzz.png"); }
+  /* line 25, about.scss */
+  .skills .container {
+    padding: 6rem 0;
+    padding-top: 8rem; }
+    /* line 28, about.scss */
+    .skills .container .text-container {
+      max-width: 80rem;
+      margin: 0 auto; }
+      /* line 33, about.scss */
+      .skills .container .text-container .grid .col-12 {
+        padding-right: 0; }
+        /* line 35, about.scss */
+        .skills .container .text-container .grid .col-12 h3 {
+          text-align: center; }
+      /* line 41, about.scss */
+      .skills .container .text-container .grid .col-4 ul {
+        list-style: none; }
+      /* line 53, about.scss */
+      .skills .container .text-container .grid .col-4 img {
+        width: 100%;
+        opacity: 0.65; }
+      /* line 57, about.scss */
+      .skills .container .text-container .grid .col-4:last-of-type {
+        padding-left: 7rem; }
+
+@media (max-width: 680px) {
+  /* line 76, about.scss */
+  .about .container .text-container h3 {
+    text-align: center; }
+
+  /* line 111, about.scss */
+  .skills .container .text-container .grid .col-4 {
+    width: 100%;
+    padding: 0;
+    text-align: center; }
+    /* line 131, about.scss */
+    .skills .container .text-container .grid .col-4:last-of-type {
+      padding-left: 0rem; }
+  /* line 136, about.scss */
+  .skills .container .text-container .grid .skillimg {
+    display: none; } }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,35 @@
+
+/*# sourceMappingURL=portfolio.css.map */
+
+
+.portfolio {
+  .container{
+    .grid{
+      .col-4{
+        .project_item{
+          // min-height: 28rem;
+          .type{
+            // height: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1008px) {
+  .portfolio {
+    .container{
+      .grid{
+        // bacdkground-color: red;
+        .col-4{
+          .project_item{
+            .type{
+              height: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
