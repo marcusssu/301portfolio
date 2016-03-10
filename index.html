@@ -6,7 +6,6 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcus Su</title>
   <meta name="description" content="">
   <meta name="author" content="">
@@ -25,9 +24,9 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/main.css">
-  <!-- <link rel="stylesheet" href="css/media.css"> -->
-
-
+  <link rel="stylesheet" href="css/about.css">
+  <!-- <link rel="stylesheet" href="css/timeline.css"> -->
+  <!-- <link rel="stylesheet" href="css/mytimeline.css"> -->
 
 
   <!-- Favicon
@@ -45,142 +44,85 @@
           </a>
         </div>
         <ul class="nav-menu">
-          <li><a class="sliding-middle-out" href="about.html">About</a></li>
-          <li><a class="sliding-middle-out" href="portfolio.html">Portfolio</a></li>
-          <li><a class="sliding-middle-out" href="contact.html">Contact</a></li>
+          <li><a class="sliding-middle-out activated" href="about.html">Home</a></li>
+          <li><a class="sliding-middle-out" href="portfolio.html">About</a></li>
+          <li><a class="sliding-middle-out" href="contact.html">Portfolio</a></li>
         </ul>
       </div>
 
     </div>
   </header>
-  <!-- Primary Page Layout
+  <!-- Primary Page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <section class="jumbotron_section">
-    <div class="jumbotron">
-      <video autoplay loop muted poster="img/home_video_poster.jpg">
-        <source src="img/home_hight.mp4" type="video/mp4">
-        <source src="img/home_hight.ogg" type="video/ogg">
-        <source src="img/home_hight.webm" type="video/webm">
-      </video>
+  <section class="about">
+    <div class="container">
       <div class="text-container">
-        <div class="grid">
-          <div class="col-3">
-            <img src="img/marcus_logo.svg" alt="logo" />
-          </div>
-          <div class="col-9">
-            <h2>Hi, I am Marcus Su</h2>
-            <p>I’m a UX/UI designer and front end developer who likes to explore user’s needs and the latest web tech.</p>
-            <a href="portfolio.html" class="button">View My Projects</a>
-          </div>
-        </div>
+        <h3>About Me</h3>
+        <p>
+          My name is Marcus Su, a UX/UI designer and front end developer, I'm fanatical in exploring the cool web tech (i.e <a href="http://hammerjs.github.io/" target="_blank">hammer.js</a>), and use it to build web app and web site, meanwhile, I'm also
+          a user experience designer who thinks user's need is matter for good design.</p>
       </div>
     </div>
   </section>
-<section class="whatido">
-  <div class="container">
-    <h3>What I do?</h3>
-    <div class="grid">
-      <div class="col-4">
-        <img src="img/user.svg" alt="user" />
-        <h4>User Centered Design</h4>
-        <p>
-          Good design is user centered, I’m interested in exploring user’s need, and build quick prototype or user testing to test my assumptions.
-        </p>
-      </div>
-      <div class="col-4">
-        <img src="img/ui.svg" alt="ui" />
-        <h4>UI Design</h4>
-        <p>
-          I'm passionate about making user interface that is not only beautiful but make sense to the user.
-        </p>
-      </div>
-      <div class="col-4">
-        <img src="img/development.svg" alt="development" />
-        <h4>Development</h4>
-        <p>
-          Keep track of the lastest web technologices, I am able to create rich user interaction, and fluid user experience.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="project">
-  <div class="container">
-    <h3>My Recent Projects</h3>
-    <div class="grid">
-      <div class="col-4">
-        <div class="project_item">
-          <a href="juu.html" class="image">
-            <!-- <div class="cover">
-            </div> -->
-            <img src="img/juu_thumbnail.png" alt="juu" />
-          </a>
-          <p class="title">Online Shop</p>
-          <p class="type">
-            Web Design & Front End Development
-          </p>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="project_item">
-          <a href="easynote.html">
-            <img src="img/easynote_thumbnail.png" alt="juu" />
-          </a>
-          <p class="title">To-do-list App</p>
-          <p class="type">
-            Web App & Javascript Development
-          </p>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="project_item">
-          <a href="#">
-            <img src="img/tripNote_thumbnail.png" alt="juu" />
-          </a>
-          <p class="title">Online Community</p>
-          <p class="type">
-            PHP & MySQLi Development
-          </p>
+
+  <section class="filter">
+    <div class="container">
+      <div class="grid">
+        <div class="col-12">
+
+
+              <select id="category-type">
+                <option value="">Filter by Type</option>
+              </select>
+
+
         </div>
       </div>
     </div>
-  </div>
-</section>
+
+  </section>
 
 
-<footer>
-  <div class="container">
-      <p>© Marcus Su 2015  ·<a href="style_guide.html">Style guide</a></p>
+    <section class="portfolio">
+      <div class="container">
+        <div class="grid">
+          <div class="col-12 template">
+            <div class="project_item">
+              <p class="title">Project Title</p>
+              <p class="type">
+                Web Design & Front End Development
+              </p>
+              <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor
+                posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam
+                enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>© Marcus Su 2016</a></p>
 
 
-      <!-- <a href="index.html" class="icon-flickr2"></a> -->
-      <a href="index.html" class="icon-dribbble"></a>
-      <a href="index.html" class="icon-github"></a>
-      <a href="index.html" class="icon-linkedin"></a>
+        <!-- <a href="index.html" class="icon-flickr2"></a> -->
+        <!-- <a href="#" class="icon-dribbble"></a> -->
+        <a href="https://github.com/marcusssu" class="icon-github"></a>
+        <a href="https://www.linkedin.com/in/marcus-su-5ba6a8104" class="icon-linkedin"></a>
 
-  </div>
+      </div>
 
-</footer>
-
-  <!-- End Document
+    </footer>
+    <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/rawData.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
 
-  <!-- Scripts
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/myscript.js"></script>
 </body>
 
 </html>
-<!-- User Interface Design
-  User Experience Design
-  Interaction Design
-  User testing
-  Wireframe/mock up/prototype
-  Adobe Creative Suite -->
-
-<!-- HTML/CSS
-  Javascript/jquery
-  Ajax
-  Angular/React
-  Responsive Web
-  Third party libraries: Masonry.js, Hammer.js etc -->

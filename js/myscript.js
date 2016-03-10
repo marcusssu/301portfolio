@@ -1,6 +1,7 @@
 $(document).ready(function() {
   projectView.populateFilters();
   projectView.filterHandler();
+  projectView.readmoreHandler();
 });
 var projects = [];
 
@@ -62,25 +63,76 @@ projectView.populateFilters = function() {
 };
 
 
-// display the related project tag by searching optionValue and tagValue
+// display the related project tag by searching optionValue inside tagValue
 // for example search "css" in "css & html"
 projectView.filterHandler = function() {
-  $('#category-type').on('change', function() {
-    var optionValue = $(this).val();
-    if ($(this).val()) {
-      $('.portfolio .col-12').hide();
-      $('.portfolio').find('.col-12:not(:first)').each(function(){
-        var thisTag = $(this);
-        var tagValue = $(this).find('.type').attr('data-type');
-        console.log(tagValue);
-        if (tagValue.search(optionValue)!=-1){
-          thisTag.fadeIn();
-        };
-      });
-    } else {
-      $('portfolio .col-12').fadeIn();
-      $('.template').hide();
+    $('#category-type').on('change', function() {
+      var optionValue = $(this).val();
+      if ($(this).val()) {
+        $('.portfolio .col-12').hide();
+        $('.portfolio').find('.col-12:not(:first)').each(function() {
+          var thisTag = $(this);
+          var tagValue = $(this).find('.type').attr('data-type');
+          console.log(tagValue);
+          if (tagValue.search(optionValue) != -1) {
+            thisTag.fadeIn();
+          };
+        });
+      } else {
+        $('portfolio .col-12').fadeIn();
+        $('.template').hide();
+      }
+      //  $('#category-type').val('');
+    });
+  }
+  // insert someting after index
+String.prototype.insert = function(index, string) {
+  if (index > 0)
+    return this.substring(0, index) + string + this.substring(index, this.length);
+  else
+    return string + this;
+};
+
+projectView.readmoreHandler = function() {
+  $('.portfolio').find('.col-12 .content').each(function() {
+    var content = $(this).text();
+    var wordCount = 0;
+    //count 100 word and hide all the contents after it.
+    for (var j = 0; j < content.length; j++) {
+      if (content[j] == " ") {
+        wordCount = wordCount + 1;
+        if (wordCount == 100) {
+          //insert the prewrite hide class
+          content = content.insert(j, "<span class='hide'>");
+          content = content.insert(content.length, "</span>");
+          content = content.insert(content.length, "<p class='more-button'> ...more</p>");
+          $(this).html(content).contents();
+        }
+      }
     }
-    //  $('#category-type').val('');
   });
 }
+
+
+//click the readmore button to display more content
+$('.content').on('click', '.more-button', function() {
+  console.log('click');
+  var hidden_text = $(this).prev('.hide');
+  if (hidden_text.is(":hidden")) {
+    hidden_text.show();
+    hidden_text.addClass('fadein-animation');
+    $(this).text(' collapse');
+    setTimeout(function() {
+      hidden_text.removeClass("fadein-animation");
+      console.log('removeclass')
+    }, 500);
+    //hide the contents
+  } else {
+    hidden_text.addClass('fadeout-animation');
+    setTimeout(function() {
+      hidden_text.hide();
+      hidden_text.removeClass('fadeout-animation');
+      $(this).text(' ...more');
+    }, 400);
+  }
+});

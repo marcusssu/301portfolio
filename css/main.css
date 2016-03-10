@@ -450,6 +450,38 @@ footer .container a:first-of-type {
 .portfolio .template{
   display: none;
 }
+
+.hide{
+  display: none;
+}
+
+.more-button{
+  color: #a1caca;
+  font-weight: 300;
+}
+.more-button:hover{
+	color:#7F8289;
+	cursor: pointer;
+}
+
+.fadein-animation {
+	-webkit-animation: fadein 0.5s ease-in-out ;
+	transition:fadein 0.5s ease-in-out ;
+}
+
+@keyframes fadein{
+	0%   {opacity:0;}
+	100% {opacity:100}
+}
+.fadeout-animation {
+	-webkit-animation: fadeout 0.5s ease-in-out ;
+	transition:fadeout 0.5s ease-in-out ;
+}
+
+@keyframes fadeout{
+	0%   {opacity:100;}
+	100% {opacity:0;}
+}
 /****************************/
 
 @media (min-width: 800px) {
