@@ -2,6 +2,7 @@ $(document).ready(function() {
   projectView.populateFilters();
   projectView.filterHandler();
   projectView.readmoreHandler();
+  projectView.navHandler();
 });
 var projects = [];
 
@@ -136,3 +137,26 @@ $('.content').on('click', '.more-button', function() {
     }, 400);
   }
 });
+
+projectView.navHandler=function(){
+
+  $('.nav-menu').on('click', 'li', function(e) {
+    e.preventDefault();
+    $(this).parent().find('a').removeClass('activated');
+    $(this).find('a').addClass('activated');
+  if ($(this).data('content')=='home'){
+    $('section').show();
+  }else{
+
+    // console.log($(this).data('content'));
+  $('section').hide();
+  $('.' + $(this).data('content')).fadeIn();
+  if ($(this).data('content')=='portfolio'){
+    console.log('test');
+    $('.filter').fadeIn();
+
+  }
+  }
+});
+
+};
