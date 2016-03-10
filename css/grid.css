@@ -58,11 +58,11 @@
 }
 
 [class^='col-']:last-of-type {
-  padding-right: 0;
+  /*padding-right: 0;*/
 }
-.col-12{
-  padding-right: 0;
-}
+/*.col-12 :last-of-type{
+  padding-right: 1.5;
+}*/
 .grid:after {
   content: "";
   display: block;
