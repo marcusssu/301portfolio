@@ -80,7 +80,7 @@ projectView.filterHandler = function() {
           };
         });
       } else {
-        $('portfolio .col-12').fadeIn();
+        $('.portfolio .col-12').fadeIn();
         $('.template').hide();
       }
       //  $('#category-type').val('');
@@ -118,6 +118,7 @@ projectView.readmoreHandler = function() {
 //click the readmore button to display more content
 $('.content').on('click', '.more-button', function() {
   console.log('click');
+  var thisButton = $(this);
   var hidden_text = $(this).prev('.hide');
   if (hidden_text.is(":hidden")) {
     hidden_text.show();
@@ -133,7 +134,8 @@ $('.content').on('click', '.more-button', function() {
     setTimeout(function() {
       hidden_text.hide();
       hidden_text.removeClass('fadeout-animation');
-      $(this).text(' ...more');
+      console.log(thisButton);
+      thisButton.text(' ...more');
     }, 400);
   }
 });
