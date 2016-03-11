@@ -98,6 +98,7 @@ projectView.readmoreHandler = function() {
   $('.portfolio').find('.col-12 .content').each(function() {
     var content = $(this).text();
     var wordCount = 0;
+
     //count 100 word and hide all the contents after it.
     for (var j = 0; j < content.length; j++) {
       if (content[j] == " ") {
@@ -140,25 +141,25 @@ $('.content').on('click', '.more-button', function() {
   }
 });
 
-projectView.navHandler=function(){
+projectView.navHandler = function() {
 
   $('.nav-menu').on('click', 'li', function(e) {
     e.preventDefault();
     $(this).parent().find('a').removeClass('activated');
     $(this).find('a').addClass('activated');
-  if ($(this).data('content')=='home'){
-    $('section').show();
-  }else{
+    if ($(this).data('content') == 'home') {
+      $('section').show();
+    } else {
 
-    // console.log($(this).data('content'));
-  $('section').hide();
-  $('.' + $(this).data('content')).fadeIn();
-  if ($(this).data('content')=='portfolio'){
-    console.log('test');
-    $('.filter').fadeIn();
+      // console.log($(this).data('content'));
+      $('section').hide();
+      $('.' + $(this).data('content')).fadeIn();
+      if ($(this).data('content') == 'portfolio') {
+        console.log('test');
+        $('.filter').fadeIn();
 
-  }
-  }
-});
+      }
+    }
+  });
 
 };
