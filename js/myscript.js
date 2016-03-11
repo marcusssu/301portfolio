@@ -7,32 +7,14 @@ $(document).ready(function() {
 var projects = [];
 
 function Project(opts) {
-  this.title = opts.title;
-  this.type = opts.type;
-  this.content = opts.content;
-
-  //for (key in opts) this[key] = opts[key];
+  for (key in opts) this[key] = opts[key];
 }
 
 Project.prototype.toHTML = function() {
-
+//compile the template
   var source = $('#project-template').html();
   var template = Handlebars.compile(source);
   return template(this);
-
-  //console.log($newProject);
-  // $newProject.removeClass('template');
-  //
-  // //insert a data-type into type tag
-  // $newProject.find('.type').attr('data-type', this.type);
-  //
-  // //update content to each tags
-  // $newProject.find('.title').html(this.title);
-  // $newProject.find('.type').html(this.type);
-  // $newProject.find('.content').html(this.content);
-  //
-  // return $newProject;
-
 };
 //push each object into projects
 rawData.forEach(function(ele) {
