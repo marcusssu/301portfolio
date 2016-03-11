@@ -10,22 +10,28 @@ function Project(opts) {
   this.title = opts.title;
   this.type = opts.type;
   this.content = opts.content;
+
+  //for (key in opts) this[key] = opts[key];
 }
 
 Project.prototype.toHTML = function() {
-  var $newProject = $('.template').clone();
+
+  var source = $('#project-template').html();
+  var template = Handlebars.compile(source);
+  return template(this);
+
   //console.log($newProject);
-  $newProject.removeClass('template');
-
-  //insert a data-type into type tag
-  $newProject.find('.type').attr('data-type', this.type);
-
-  //update content to each tags
-  $newProject.find('.title').html(this.title);
-  $newProject.find('.type').html(this.type);
-  $newProject.find('.content').html(this.content);
-
-  return $newProject;
+  // $newProject.removeClass('template');
+  //
+  // //insert a data-type into type tag
+  // $newProject.find('.type').attr('data-type', this.type);
+  //
+  // //update content to each tags
+  // $newProject.find('.title').html(this.title);
+  // $newProject.find('.type').html(this.type);
+  // $newProject.find('.content').html(this.content);
+  //
+  // return $newProject;
 
 };
 //push each object into projects
@@ -42,10 +48,11 @@ var projectView = {};
 
 projectView.populateFilters = function() {
   $('.portfolio').find('.col-12').each(function() {
-    if (!$(this).hasClass('template')) {
+
       //grab the types form data-type
       var types = $(this).find('.type').attr('data-type');
 
+      // console.log(types);
       //split them into an array
       var typeArray = types.split("&");
 
@@ -59,7 +66,6 @@ projectView.populateFilters = function() {
           $('#category-type').append(optionTag);
         }
       });
-    }
   });
 };
 
@@ -71,7 +77,7 @@ projectView.filterHandler = function() {
       var optionValue = $(this).val();
       if ($(this).val()) {
         $('.portfolio .col-12').hide();
-        $('.portfolio').find('.col-12:not(:first)').each(function() {
+        $('.portfolio').find('.col-12').each(function() {
           var thisTag = $(this);
           var tagValue = $(this).find('.type').attr('data-type');
           console.log(tagValue);

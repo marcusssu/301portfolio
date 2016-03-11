@@ -33,6 +33,19 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="img/web_icon.png">
 
+  <script id="project-template" type="text/x-handlebars-template">
+    <div class="col-12">
+      <div class="project_item">
+        <p class="title">{{title}}</p>
+        <p class="type" data-type="{{type}}">
+          {{type}}
+        </p>
+        <p class="content">
+          {{content}}
+        </p>
+      </div>
+    </div>
+  </script>
 </head>
 
 <body>
@@ -79,29 +92,14 @@
   <section class="portfolio">
     <div class="container">
       <div class="grid">
-        <!-- <script class="template" id="article-template" type="text/x-handlebars-template"> -->
-          <div class="col-12 template">
-            <div class="project_item">
-              <p class="title">Project Title</p>
-              <p class="type">
-                Web Design & Front End Development
-              </p>
-              <p class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor
-                posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam
-                enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent
-                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.
-              </p>
-            </div>
-          </div>
-        <!-- </script> -->
+
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© Marcus Su 2016</a>
+      <p>© Marcus Su 2016</p>
       <a href="https://github.com/marcusssu" class="icon-github"></a>
       <a href="https://www.linkedin.com/in/marcus-su-5ba6a8104" class="icon-linkedin"></a>
     </div>
