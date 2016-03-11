@@ -61,7 +61,7 @@ project.filterHandler = function() {
       return string + this;
   };
 
-  project.readmoreHandler = function() {
+  project.readMoreHandler = function() {
     $('.portfolio').find('.col-12 .content').each(function() {
       var content = $(this).text();
       var wordCount = 0;
