@@ -119,21 +119,21 @@ projectView.readmoreHandler = function() {
 $('.content').on('click', '.more-button', function() {
   console.log('click');
   var thisButton = $(this);
-  var hidden_text = $(this).prev('.hide');
-  if (hidden_text.is(":hidden")) {
-    hidden_text.show();
-    hidden_text.addClass('fadein-animation');
+  var hiddenText = $(this).prev('.hide');
+  if (hiddenText.is(":hidden")) {
+    hiddenText.show();
+    hiddenText.addClass('fadein-animation');
     $(this).text(' collapse');
     setTimeout(function() {
-      hidden_text.removeClass("fadein-animation");
+      hiddenText.removeClass("fadein-animation");
       console.log('removeclass')
     }, 500);
     //hide the contents
   } else {
-    hidden_text.addClass('fadeout-animation');
+    hiddenText.addClass('fadeout-animation');
     setTimeout(function() {
-      hidden_text.hide();
-      hidden_text.removeClass('fadeout-animation');
+      hiddenText.hide();
+      hiddenText.removeClass('fadeout-animation');
       console.log(thisButton);
       thisButton.text(' ...more');
     }, 400);
