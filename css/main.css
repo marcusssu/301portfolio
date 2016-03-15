@@ -1,0 +1,285 @@
+/* line 10, main.scss */
+::-moz-selection {
+  background: #4ac1d5;
+  /* Gecko Browsers */
+  color: white; }
+
+/* line 15, main.scss */
+::selection {
+  background: #4ac1d5;
+  /* WebKit/Blink Browsers */
+  color: white; }
+
+/*logo font*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?n3nhso");
+  src: url("fonts/icomoon.eot?#iefixn3nhso") format("embedded-opentype"), url("fonts/icomoon.ttf?n3nhso") format("truetype"), url("fonts/icomoon.woff?n3nhso") format("woff"), url("fonts/icomoon.svg?n3nhso#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 28, main.scss */
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 42, main.scss */
+.icon-logo:before {
+  font-size: 4rem;
+  padding: 0;
+  line-height: 5.5rem;
+  color: #111;
+  content: "\e600";
+  text-decoration: none;
+  transition: color 0.5s ease; }
+
+/* line 51, main.scss */
+.icon-logo:hover:before {
+  color: #4ac1d5; }
+
+/* line 60, main.scss */
+.icon-flickr2:before {
+  content: "\e601"; }
+
+/* line 63, main.scss */
+.icon-dribbble:before {
+  content: "\e604"; }
+
+/* line 66, main.scss */
+.icon-github:before {
+  content: "\e602"; }
+
+/* line 69, main.scss */
+.icon-linkedin:before {
+  content: "\e603"; }
+
+/* line 72, main.scss */
+.style_guide {
+  margin-top: 3rem; }
+
+/*/
+/////////////////////////////////////*/
+/* line 77, main.scss */
+h3 {
+  font-weight: 300;
+  font-size: 3.5rem; }
+
+/***********navigation bar*************/
+/* line 95, main.scss */
+.nav-bar {
+  height: 6rem;
+  /*background-color: red;*/ }
+
+/* line 99, main.scss */
+#logo {
+  float: left;
+  height: 6rem;
+  position: relative;
+  margin-left: 1rem; }
+  /* line 104, main.scss */
+  #logo a {
+    text-decoration: none;
+    line-height: 4.2rem; }
+
+/* line 109, main.scss */
+.nav-menu {
+  margin: 0;
+  float: right; }
+  /* line 112, main.scss */
+  .nav-menu li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+    /* line 117, main.scss */
+    .nav-menu li a {
+      text-transform: uppercase;
+      color: #111;
+      text-decoration: none;
+      font-weight: 400;
+      padding: 0;
+      transition: color 0.5s ease;
+      line-height: 6rem; }
+      /* line 125, main.scss */
+      .nav-menu li a:hover {
+        color: #4ac1d5; }
+
+/*http://bradsknutson.com/blog/css-sliding-underline/*/
+/* line 133, main.scss */
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px; }
+  /* line 137, main.scss */
+  .sliding-middle-out::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 0.2rem;
+    width: 0;
+    background: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease; }
+  /* line 146, main.scss */
+  .sliding-middle-out:hover:after {
+    width: 100%;
+    background: #4ac1d5; }
+
+/* line 152, main.scss */
+.activated {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+  color: #4ac1d5 !important; }
+  /* line 157, main.scss */
+  .activated::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 0.2rem;
+    width: 100%;
+    background: #4ac1d5; }
+
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/* line 173, main.scss */
+.portfolio {
+  background-image: url("../img/greyzz/greyzz.png");
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  opacity: 1; }
+  /* line 178, main.scss */
+  .portfolio h3 {
+    margin-bottom: 3rem;
+    text-align: center; }
+  /* line 183, main.scss */
+  .portfolio .container .grid .col-4:last-of-type {
+    padding-right: 1.5rem; }
+  /* line 186, main.scss */
+  .portfolio .container .grid .col-4 {
+    opacity: 1;
+    transition: opacity 0.5s ease; }
+  /* line 190, main.scss */
+  .portfolio .container .grid .unselected {
+    opacity: 0.5;
+    transition: opacity 0.5s ease; }
+  /* line 195, main.scss */
+  .portfolio .project_item {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    background-color: white;
+    height: auto;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+    /* line 204, main.scss */
+    .portfolio .project_item .image {
+      content: "";
+      display: block;
+      clear: both;
+      position: relative; }
+      /* line 211, main.scss */
+      .portfolio .project_item .image .text-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+        background-color: white;
+        opacity: 0;
+        padding: 3rem;
+        -webkit-transition: opacity 500ms;
+        -moz-transition: opacity 500ms;
+        -o-transition: opacity 500ms;
+        transition: opacity 500ms; }
+      /* line 227, main.scss */
+      .portfolio .project_item .image .text-content:hover {
+        opacity: 0.9; }
+      /* line 231, main.scss */
+      .portfolio .project_item .image img {
+        width: 100%; }
+    /* line 235, main.scss */
+    .portfolio .project_item .title {
+      font-size: 1.8rem;
+      margin: 0;
+      padding: 0 1rem;
+      padding-left: 0; }
+    /* line 243, main.scss */
+    .portfolio .project_item .type {
+      color: #c8c8c8;
+      margin-bottom: 0;
+      padding: 0 1rem;
+      padding-left: 0; }
+
+/* line 256, main.scss */
+footer {
+  height: 5rem;
+  width: 100%;
+  background-color: white; }
+  /* line 260, main.scss */
+  footer .container {
+    padding: 0 1.5rem; }
+    /* line 262, main.scss */
+    footer .container p {
+      display: inline-block;
+      font-size: 1.2rem;
+      line-height: 5rem;
+      margin: 0;
+      width: 17rem; }
+      /* line 268, main.scss */
+      footer .container p a {
+        font-size: 1.2rem; }
+    /* line 272, main.scss */
+    footer .container a {
+      display: inline-block;
+      float: right;
+      margin-right: 3rem;
+      font-size: 2rem;
+      line-height: 5rem;
+      color: #666;
+      text-decoration: none;
+      transition: color 0.5s ease; }
+      /* line 281, main.scss */
+      footer .container a:hover {
+        color: #4ac1d5; }
+      /* line 284, main.scss */
+      footer .container a:first-of-type {
+        margin-right: 0; }
+
+/****************************/
+@media (max-width: 960px) {
+  /* line 301, main.scss */
+  .type {
+    height: 5rem; }
+
+  /* line 304, main.scss */
+  .portfolio .project_item .image .text-content {
+    display: none; } }
+@media (max-width: 640px) {
+  /* line 312, main.scss */
+  .portfolio .container .grid .col-4 {
+    width: 50%; } }
+@media (max-width: 565px) {
+  /* line 317, main.scss */
+  .portfolio .container .grid .col-4 .type {
+    display: none; } }
+@media (max-width: 480px) {
+  /* line 322, main.scss */
+  .portfolio .project_item .title {
+    font-size: 1.5rem; } }
+@media (max-width: 400px) {
+  /* line 327, main.scss */
+  .nav-menu li a {
+    font-size: 1.3rem; } }
+
+/*# sourceMappingURL=main.css.map */

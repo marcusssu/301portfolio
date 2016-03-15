@@ -1,0 +1,20 @@
+/* line 4, about.scss */
+.about {
+  padding: 0 1.5rem; }
+  /* line 6, about.scss */
+  .about .container {
+    padding: 0; }
+    /* line 8, about.scss */
+    .about .container .text-container {
+      max-width: 60rem;
+      margin: 5rem auto; }
+      /* line 16, about.scss */
+      .about .container .text-container p a {
+        cursor: help; }
+
+@media (max-width: 680px) {
+  /* line 31, about.scss */
+  .about .container .text-container h3 {
+    text-align: center; } }
+
+/*# sourceMappingURL=about.css.map */

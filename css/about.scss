@@ -1,0 +1,44 @@
+*{
+  // outline: 1px solid black;
+}
+.about {
+  padding:0 1.5rem;
+  .container {
+    padding: 0;
+    .text-container {
+      max-width: 60rem;
+      margin:5rem auto;
+      // width: 60rem;
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+      p a{
+        cursor: help;
+      }
+    }
+  }
+}
+
+@media (max-width:680px) {
+
+  .about {
+    .container {
+      // padding: 0 3rem;
+      // background-color: red;
+      .text-container {
+
+          h3{
+            text-align: center;
+
+        }
+        // width: 100%;
+        // margin: 0 3rem;
+        // position: relative;
+        p a{
+        }
+      }
+    }
+  }
+
+}
