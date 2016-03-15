@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  project.populateFilters();
-  project.filterHandler();
-  project.readMoreHandler();
+  // project.populateFilters();
+  // project.filterHandler();
+  // project.readMoreHandler();
   project.navHandler();
-  project.readMoreButton();
+  // project.readMoreButton();
 });
 
 var project = {};

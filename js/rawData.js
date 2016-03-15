@@ -1,37 +1,34 @@
 var rawData = [
     {
-      title: 'Project Title',
+      title: 'Online Shop',
+      src: 'img/juu_thumbnail.png',
       type: 'html & css',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.'
+      content: 'Juu is a course project I worked with Sofia Tang that offered online shopping experience and aimed to create brand effect.'
     },
     {
-      title: 'Project Title',
-      type: 'Web Design & Front End Development',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.'
-    },
-    {
-      title: 'Project Title',
-      type: 'Angular.js & MVP',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.'
+      title: 'To-do-list App',
+      src: 'img/easynote_thumbnail.png',
+      type: 'Web App & Javascript Development',
+      content: 'EasyNote is a rebuilt web application of the native app CLEAR, I developed and added some useful features upon on it and and made it works on web browser.'
+    },{
+      title: 'Online Community',
+      src: 'img/tripNote_thumbnail.png',
+      type: 'PHP & MySQLi Development',
+      content: ''
+    },{
+      title: 'Dslr Camera Simulator',
+      src: 'img/DSLRsim_thumbnail.png',
+      type: 'Angular.js',
+      content: 'DSLRsim allows user to learn how to use the camera by trying out three essential settings.'
+    },{
+      title: 'Social Network',
+      src: 'img/meow_thumbnail.png',
+      type: 'UI Design & Responsive Layout',
+      content: ''
     },{
       title: 'Project Title',
-      type: 'node.js & mongoDB',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.'
-    },{
-      title: 'Project Title',
-      type: 'graphic design',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.'
-    },{
-      title: 'Project Title',
-      type: 'html & Front End Development',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.'
-    },{
-      title: 'Project Title',
-      type: 'html & angular.js',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.'
-    },{
-      title: 'Project Title',
-      type: 'html & mongoDB',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis urna in nisl placerat ullamcorper. Sed vehicula fermentum tortor at eleifend. In tellus quam, egestas et libero in, mollis dignissim elit. Nulla a justo tempus, luctus tortor posuere, sodales diam. Sed tristique cursus dolor nec lobortis. Etiam feugiat tincidunt tempus. Nam consequat vel augue non gravida. Cras venenatis orci odio, a pulvinar velit tempor eget. Aenean eget pulvinar justo. Integer mattis aliquam enim, eu blandit justo hendrerit in. Morbi hendrerit id enim auctor congue. Suspendisse maximus tempus mi, a fringilla massa tristique quis. Pellentesque dolor est, molestie id ultricies id, congue vel orci. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec aliquet ex ac pellentesque tempor.'
+      src: 'img/placeholder_thumbnail.png',
+      type: 'html & css',
+      content: ''
     },
   ];
