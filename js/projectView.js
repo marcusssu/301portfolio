@@ -2,12 +2,12 @@ $(document).ready(function() {
   // project.populateFilters();
   // project.filterHandler();
   // project.readMoreHandler();
-  project.navHandler();
+  projectView.navHandler();
   // project.readMoreButton();
 });
 
-var project = {};
-project.populateFilters = function() {
+var projectView = {};
+projectView.populateFilters = function() {
   $('.portfolio').find('.col-12').each(function() {
 
       //grab the types form data-type
@@ -32,7 +32,7 @@ project.populateFilters = function() {
 
 // display the related project tag by searching optionValue inside tagValue
 // for example search "css" in "css & html"
-project.filterHandler = function() {
+projectView.filterHandler = function() {
     $('#category-type').on('change', function() {
       var optionValue = $(this).val();
       if ($(this).val()) {
@@ -61,7 +61,7 @@ project.filterHandler = function() {
       return string + this;
   };
 
-  project.readMoreHandler = function() {
+  projectView.readMoreHandler = function() {
     $('.portfolio').find('.col-12 .content').each(function() {
       var content = $(this).text();
       var wordCount = 0;
@@ -81,7 +81,7 @@ project.filterHandler = function() {
       }
     });
   }
-project.readMoreButton = function(){
+projectView.readMoreButton = function(){
   $('.content').on('click', '.more-button', function() {
     console.log('click');
     var thisButton = $(this);
@@ -107,7 +107,7 @@ project.readMoreButton = function(){
   });
 }
 
-  project.navHandler = function() {
+  projectView.navHandler = function() {
 
     $('.nav-menu').on('click', 'li', function(e) {
       e.preventDefault();
@@ -127,3 +127,9 @@ project.readMoreButton = function(){
       }
     });
   };
+
+  projectView.initIndexPage = function(){
+    Project.all.forEach(function(a){
+    $('.portfolio').find('.grid').append(a.toHTML());
+  });
+};

@@ -150,34 +150,28 @@ h3 {
 /**********************************************************/
 /**********************************************************/
 /**********************************************************/
-/* line 172, main.scss */
-.project,
+/* line 173, main.scss */
 .portfolio {
   background-image: url("../img/greyzz/greyzz.png");
   padding-top: 4rem;
   padding-bottom: 4rem;
   opacity: 1; }
   /* line 178, main.scss */
-  .project h3,
   .portfolio h3 {
     margin-bottom: 3rem;
     text-align: center; }
   /* line 183, main.scss */
-  .project .container .grid .col-4:last-of-type,
   .portfolio .container .grid .col-4:last-of-type {
     padding-right: 1.5rem; }
   /* line 186, main.scss */
-  .project .container .grid .col-4,
   .portfolio .container .grid .col-4 {
     opacity: 1;
     transition: opacity 0.5s ease; }
   /* line 190, main.scss */
-  .project .container .grid .unselected,
   .portfolio .container .grid .unselected {
     opacity: 0.5;
     transition: opacity 0.5s ease; }
   /* line 195, main.scss */
-  .project .project_item,
   .portfolio .project_item {
     padding: 1rem;
     width: 100%;
@@ -188,14 +182,12 @@ h3 {
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
     /* line 204, main.scss */
-    .project .project_item .image,
     .portfolio .project_item .image {
       content: "";
       display: block;
       clear: both;
       position: relative; }
       /* line 211, main.scss */
-      .project .project_item .image .text-content,
       .portfolio .project_item .image .text-content {
         position: absolute;
         top: 0;
@@ -210,48 +202,44 @@ h3 {
         -moz-transition: opacity 500ms;
         -o-transition: opacity 500ms;
         transition: opacity 500ms; }
-      /* line 226, main.scss */
-      .project .project_item .image .text-content:hover,
+      /* line 227, main.scss */
       .portfolio .project_item .image .text-content:hover {
         opacity: 0.9; }
-      /* line 229, main.scss */
-      .project .project_item .image img,
+      /* line 231, main.scss */
       .portfolio .project_item .image img {
         width: 100%; }
-    /* line 233, main.scss */
-    .project .project_item .title,
+    /* line 235, main.scss */
     .portfolio .project_item .title {
       font-size: 1.8rem;
       margin: 0;
       padding: 0 1rem;
       padding-left: 0; }
-    /* line 241, main.scss */
-    .project .project_item .type,
+    /* line 243, main.scss */
     .portfolio .project_item .type {
       color: #c8c8c8;
       margin-bottom: 0;
       padding: 0 1rem;
       padding-left: 0; }
 
-/* line 254, main.scss */
+/* line 256, main.scss */
 footer {
   height: 5rem;
   width: 100%;
   background-color: white; }
-  /* line 258, main.scss */
+  /* line 260, main.scss */
   footer .container {
     padding: 0 1.5rem; }
-    /* line 260, main.scss */
+    /* line 262, main.scss */
     footer .container p {
       display: inline-block;
       font-size: 1.2rem;
       line-height: 5rem;
       margin: 0;
       width: 17rem; }
-      /* line 266, main.scss */
+      /* line 268, main.scss */
       footer .container p a {
         font-size: 1.2rem; }
-    /* line 270, main.scss */
+    /* line 272, main.scss */
     footer .container a {
       display: inline-block;
       float: right;
@@ -261,32 +249,36 @@ footer {
       color: #666;
       text-decoration: none;
       transition: color 0.5s ease; }
-      /* line 279, main.scss */
+      /* line 281, main.scss */
       footer .container a:hover {
         color: #4ac1d5; }
-      /* line 282, main.scss */
+      /* line 284, main.scss */
       footer .container a:first-of-type {
         margin-right: 0; }
 
 /****************************/
 @media (max-width: 960px) {
-  /* line 299, main.scss */
+  /* line 301, main.scss */
   .type {
-    height: 5rem; } }
+    height: 5rem; }
+
+  /* line 304, main.scss */
+  .portfolio .project_item .image .text-content {
+    display: none; } }
 @media (max-width: 640px) {
-  /* line 307, main.scss */
+  /* line 312, main.scss */
   .portfolio .container .grid .col-4 {
     width: 50%; } }
 @media (max-width: 565px) {
-  /* line 312, main.scss */
+  /* line 317, main.scss */
   .portfolio .container .grid .col-4 .type {
     display: none; } }
 @media (max-width: 480px) {
-  /* line 317, main.scss */
+  /* line 322, main.scss */
   .portfolio .project_item .title {
     font-size: 1.5rem; } }
 @media (max-width: 400px) {
-  /* line 322, main.scss */
+  /* line 327, main.scss */
   .nav-menu li a {
     font-size: 1.3rem; } }
 

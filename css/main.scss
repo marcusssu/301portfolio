@@ -169,7 +169,7 @@ h3 {
 /**********************************************************/
 
 /**********************************************************/
-.project,
+
 .portfolio {
   background-image: url("../img/greyzz/greyzz.png");
   padding-top: 4rem;
@@ -209,6 +209,7 @@ h3 {
 
       position: relative;
       .text-content{
+        // display: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -224,6 +225,7 @@ h3 {
         transition: opacity 500ms;
       }
       .text-content:hover{
+        // display: block;
         opacity: 0.9;
       }
       img {
@@ -298,6 +300,9 @@ footer {
 @media (max-width:960px) {
   .type{
     height: 5rem;
+  }
+  .portfolio .project_item .image .text-content{
+    display:none;
   }
 }
 @media (max-width:720px) {
