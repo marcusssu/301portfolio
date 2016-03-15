@@ -20,27 +20,24 @@ Project.loadAll = function(rawData) {
 };
 
 Project.fetchAll = function() {
+  //if the rawdata exist in localStorage, parse the data and render the page
   if (localStorage.rawData) {
 
-    Project.loadAll(JSON.parse(localStorage.rawData));//done: What do we pass in here to the .loadAll function?
+    Project.loadAll(JSON.parse(localStorage.rawData));
 
     projectView.initIndexPage();
-    //(); //done: Change this fake method call to the correct one that will render the index page.
-  } else {
-    // TODO: When we don't already have the rawData, we need to:
-    // 1. Retrieve the JSON file from the server with AJAX (which jQuery method is best for this?),
-    console.log('test');
-    $.getJSON('js/rawData.json',function(rawData){
-    // 2. Store the resulting JSON data with the .loadAll method,
-      Project.loadAll(rawData);
-    // 3. Cache it in localStorage so we can skip the server call next time,
-        var cache = JSON.stringify(rawData);
 
-        // localStorage.rawData=rawData;
+  } else {
+    //if the rawdata is not in localStorage, fire a ajax request to get the json file
+    $.getJSON('js/rawData.json',function(rawData){
+    //push the json file into a js object
+      Project.loadAll(rawData);
+    //cache the data into the localStorage
+        var cache = JSON.stringify(rawData);
         localStorage.rawData = cache;
     });
 
-    // 4. And then render the index page (perhaps with an articleView method?).
+    //render the indexpage.
     projectView.initIndexPage();
 
 
