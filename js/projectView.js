@@ -1,3 +1,4 @@
+(function(module) {
 $(document).ready(function() {
   // project.populateFilters();
   // project.filterHandler();
@@ -67,18 +68,20 @@ projectView.filterHandler = function() {
       var wordCount = 0;
 
       //count 100 word and hide all the contents after it.
-      for (var j = 0; j < content.length; j++) {
-        if (content[j] == " ") {
-          wordCount = wordCount + 1;
-          if (wordCount == 100) {
-            //insert the prewrite hide class
-            content = content.insert(j, "<span class='hide'>");
-            content = content.insert(content.length, "</span>");
-            content = content.insert(content.length, "<p class='more-button'> ...more</p>");
-            $(this).html(content).contents();
-          }
-        }
-      }
+      // for (var j = 0; j < content.length; j++) {
+      //   if (content[j] == " ") {
+      //     wordCount = wordCount + 1;
+      //     if (wordCount == 100) {
+      //       //insert the prewrite hide class
+      //       content = content.insert(j, "<span class='hide'>");
+      //       content = content.insert(content.length, "</span>");
+      //       content = content.insert(content.length, "<p class='more-button'> ...more</p>");
+      //       $(this).html(content).contents();
+      //     }
+      //   }
+      // }
+
+      
     });
   }
 projectView.readMoreButton = function(){
@@ -133,3 +136,6 @@ projectView.readMoreButton = function(){
     $('.portfolio').find('.grid').append(a.toHTML());
   });
 };
+
+module.projectView = projectView;
+})(window);

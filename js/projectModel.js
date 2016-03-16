@@ -1,4 +1,4 @@
-
+(function(module) {
 function Project(opts) {
   for (key in opts) this[key] = opts[key];
 }
@@ -19,13 +19,13 @@ Project.loadAll = function(rawData) {
   })
 };
 
-Project.fetchAll = function() {
+Project.fetchAll = function(placeHolder) {
   //if the rawdata exist in localStorage, parse the data and render the page
   if (localStorage.rawData) {
 
     Project.loadAll(JSON.parse(localStorage.rawData));
 
-    projectView.initIndexPage();
+    placeHolder();
 
   } else {
     //if the rawdata is not in localStorage, fire a ajax request to get the json file
@@ -38,9 +38,9 @@ Project.fetchAll = function() {
     });
 
     //render the indexpage.
-    projectView.initIndexPage();
-
-
+    placeHolder();
 
   }
 }
+module.Project = Project;
+})(window);
