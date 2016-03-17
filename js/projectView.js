@@ -1,11 +1,5 @@
 (function(module) {
-$(document).ready(function() {
-  // project.populateFilters();
-  // project.filterHandler();
-  // project.readMoreHandler();
-  projectView.navHandler();
-  // project.readMoreButton();
-});
+
 
 var projectView = {};
 projectView.populateFilters = function() {
@@ -81,7 +75,7 @@ projectView.filterHandler = function() {
       //   }
       // }
 
-      
+
     });
   }
 projectView.readMoreButton = function(){
@@ -132,6 +126,7 @@ projectView.readMoreButton = function(){
   };
 
   projectView.initIndexPage = function(){
+    projectView.navHandler();
     Project.all.forEach(function(a){
     $('.portfolio').find('.grid').append(a.toHTML());
   });
