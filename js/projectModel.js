@@ -25,10 +25,6 @@
   Project.fetchAll = function(callback) {
     //if the rawdata exist in localStorage, parse the data and render the page
     if (localStorage.rawData) {
-
-      // Project.loadAll(JSON.parse(localStorage.rawData));
-      //
-      // placeHolder();
       $.ajax({
         type: 'HEAD',
         url: '/js/rawdata.json',
@@ -39,6 +35,11 @@
           //if localStorage does not have eTag or the current eTag not equal to localStorage's eTag
           if (!localStorage.eTag || eTag !== localStorage.eTag) {
             localStorage.eTag = eTag;
+
+            //******************************//
+            //in line 43 and line 62, I'm using the same $.getJSON() twice, for FP and OOP principles, I should only define once and call twice. 
+            //******************************//
+
             $.getJSON('js/rawData.json', function(rawData) {
               //push the json file into a js object
               Project.loadAll(rawData);
@@ -47,6 +48,7 @@
               localStorage.rawData = cache;
               callback();
             });
+
           } else {
             Project.loadAll(JSON.parse(localStorage.rawData));
             callback();
@@ -73,10 +75,6 @@
         //render the indexpage.
         callback();
       });
-
-
-
-
     }
   }
   module.Project = Project;
