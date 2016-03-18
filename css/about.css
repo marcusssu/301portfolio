@@ -1,3 +1,4 @@
+/*REVIEW: This format looks great and definately follows a SCSS like format. As a minor thought, you may want to consider running a beautifier package (Atom Beautify) against your CSS code and moving more of a CSS look and feel after this migration and/or before going to production.  */
 /* line 4, about.scss */
 .about {
   padding: 0 1.5rem; }

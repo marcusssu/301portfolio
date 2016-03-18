@@ -36,7 +36,7 @@
           console.log(eTag);
           //if localStorage does not have eTag or the current eTag not equal to localStorage's eTag
           if (!localStorage.eTag || eTag !== localStorage.eTag) {
-//REVIEW: This is a very minor recomendation, but if you wanted, you could set the value of localStorage.eTag to the $.getJSON... call directly. Again, this is only a minor recomendation and is purely based on preference or semantecs.
+//REVIEW: This is a very minor recommendation, but if you wanted, you could set the value of localStorage.eTag to the $.getJSON... call directly. Again, this is only a minor recommendation and is purely based on preference or semantics.
             localStorage.eTag = eTag;
 
             //******************************//
@@ -45,8 +45,7 @@
 
             $.getJSON('js/rawData.json', function(rawData) {
               //push the json file into a js object
-//REVIEW: You might want to look to combine a couple of these lines below, where possible. For example, you might want to look at something similar to:
-//Project.loadAll(JSON.stringify(localStorage.rawData));
+//REVIEW: You might want to look to combine a couple of these lines below, where possible. For example, you might want to look at something similar to: Project.loadAll(JSON.stringify(localStorage.rawData));
               Project.loadAll(rawData);
               //cache the data into the localStorage
               var cache = JSON.stringify(rawData);

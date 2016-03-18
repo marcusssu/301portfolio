@@ -1,17 +1,15 @@
+//REVIEW: You may want to run this through a beautifier package or manually add a few semicolons and spaces. I have made a few changes below for spacing, semicolons, and use of single quotations based on the linter I have installed.
+
 (function(module) {
 
-
-var projectView = {};
-projectView.populateFilters = function() {
-  $('.portfolio').find('.col-12').each(function() {
-
+  var projectView = {};
+  projectView.populateFilters = function() {
+    $('.portfolio').find('.col-12').each(function() {
       //grab the types form data-type
       var types = $(this).find('.type').attr('data-type');
-
       // console.log(types);
       //split them into an array
-      var typeArray = types.split("&");
-
+      var typeArray = types.split('&');
       //for each item, create a option tag.
       typeArray.forEach(function(item, index) {
         //remove space
@@ -22,12 +20,12 @@ projectView.populateFilters = function() {
           $('#category-type').append(optionTag);
         }
       });
-  });
-};
+    });
+  };
 
-// display the related project tag by searching optionValue inside tagValue
-// for example search "css" in "css & html"
-projectView.filterHandler = function() {
+  // display the related project tag by searching optionValue inside tagValue
+  // for example search "css" in "css & html"
+  projectView.filterHandler = function() {
     $('#category-type').on('change', function() {
       var optionValue = $(this).val();
       if ($(this).val()) {
@@ -46,7 +44,7 @@ projectView.filterHandler = function() {
       }
       //  $('#category-type').val('');
     });
-  }
+  };
 
   // insert someting after index
   String.prototype.insert = function(index, string) {
@@ -61,6 +59,7 @@ projectView.filterHandler = function() {
       var content = $(this).text();
       var wordCount = 0;
 
+//REVIEW: This looks like you are getting ready to add some cool functionality, but as a suggestion, I would removew commented text prior to going to production.
       //count 100 word and hide all the contents after it.
       // for (var j = 0; j < content.length; j++) {
       //   if (content[j] == " ") {
@@ -74,38 +73,35 @@ projectView.filterHandler = function() {
       //     }
       //   }
       // }
-
-
     });
-  }
-projectView.readMoreButton = function(){
-  $('.content').on('click', '.more-button', function() {
-    console.log('click');
-    var thisButton = $(this);
-    var hiddenText = $(this).prev('.hide');
-    if (hiddenText.is(":hidden")) {
-      hiddenText.show();
-      hiddenText.addClass('fadein-animation');
-      $(this).text(' collapse');
-      setTimeout(function() {
-        hiddenText.removeClass("fadein-animation");
-        console.log('removeclass')
-      }, 500);
-      //hide the contents
-    } else {
-      hiddenText.addClass('fadeout-animation');
-      setTimeout(function() {
-        hiddenText.hide();
-        hiddenText.removeClass('fadeout-animation');
-        console.log(thisButton);
-        thisButton.text(' ...more');
-      }, 400);
-    }
-  });
-}
+  };
+  projectView.readMoreButton = function() {
+    $('.content').on('click', '.more-button', function() {
+      console.log('click');
+      var thisButton = $(this);
+      var hiddenText = $(this).prev('.hide');
+      if (hiddenText.is(':hidden')) {
+        hiddenText.show();
+        hiddenText.addClass('fadein-animation');
+        $(this).text(' collapse');
+        setTimeout(function() {
+          hiddenText.removeClass('fadein-animation');
+          console.log('removeclass');
+        }, 500);
+        //hide the contents
+      } else {
+        hiddenText.addClass('fadeout-animation');
+        setTimeout(function() {
+          hiddenText.hide();
+          hiddenText.removeClass('fadeout-animation');
+          console.log(thisButton);
+          thisButton.text(' ...more');
+        }, 400);
+      }
+    });
+  };
 
   projectView.navHandler = function() {
-
     $('.nav-menu').on('click', 'li', function(e) {
       e.preventDefault();
       $(this).parent().find('a').removeClass('activated');
@@ -113,24 +109,23 @@ projectView.readMoreButton = function(){
       if ($(this).data('content') == 'home') {
         $('section').show();
       } else {
-
         // console.log($(this).data('content'));
         $('section').hide();
         $('.' + $(this).data('content')).fadeIn();
         if ($(this).data('content') == 'portfolio') {
-          console.log('test');
+          // console.log('test');
           $('.filter').fadeIn();
         }
       }
     });
   };
 
-  projectView.initIndexPage = function(){
+  projectView.initIndexPage = function() {
     projectView.navHandler();
-    Project.all.forEach(function(a){
-    $('.portfolio').find('.grid').append(a.toHTML());
-  });
-};
+    Project.all.forEach(function(a) {
+      $('.portfolio').find('.grid').append(a.toHTML());
+    });
+  };
 
-module.projectView = projectView;
+  module.projectView = projectView;
 })(window);
