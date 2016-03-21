@@ -17,6 +17,7 @@
       Project.all.push(new Project(ele));
     })
   };
+  
   //******************************//
   //code reivew class-9
   //Refactorin the fetchAll: if the data is in localStorage, compare its eTag to the newest eTag to check whether or not
@@ -29,10 +30,9 @@
         type: 'HEAD',
         url: '/js/rawdata.json',
         success: function(data, message, xhr) {
-          console.log(message);
-          console.log(xhr);
+
           var eTag = xhr.getResponseHeader('eTag');
-          console.log(eTag);
+
           //if localStorage does not have eTag or the current eTag not equal to localStorage's eTag
           if (!localStorage.eTag || eTag !== localStorage.eTag) {
             localStorage.eTag = eTag;
@@ -45,8 +45,7 @@
               //push the json file into a js object
               Project.loadAll(rawData);
               //cache the data into the localStorage
-              var cache = JSON.stringify(rawData);
-              localStorage.rawData = cache;
+              localStorage.rawData = JSON.stringify(rawData);
               callback();
             });
 

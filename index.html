@@ -54,13 +54,13 @@
     <div class="container">
       <div class="nav-bar">
         <div id="logo">
-          <a href="index.html" class="icon-logo sliding-middle-out">
+          <a href="/" class="icon-logo sliding-middle-out">
           </a>
         </div>
         <ul class="nav-menu">
-          <li data-content="home"><a class="sliding-middle-out activated" href="#">Home</a></li>
-          <li data-content="about"><a class="sliding-middle-out" href="#">About</a></li>
-          <li data-content="portfolio"><a class="sliding-middle-out" href="#">Portfolio</a></li>
+          <li data-content="home"><a class="sliding-middle-out activated" href="/">Home</a></li>
+          <li data-content="about"><a class="sliding-middle-out" href="/about">About</a></li>
+          <li data-content="portfolio"><a class="sliding-middle-out" href="/portfolio">Portfolio</a></li>
         </ul>
       </div>
     </div>
@@ -110,12 +110,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <!-- <script type="text/javascript" src="js/rawData.js"></script> -->
+
+
   <script type="text/javascript" src="js/projectModel.js"></script>
   <script type="text/javascript" src="js/projectView.js"></script>
-  <script>
-      Project.fetchAll(projectView.initIndexPage);
-      
-    </script>
+  <script type="text/javascript" src="js/page.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+  <script type="text/javascript" src="js/routes.js"></script>
+
 </body>
 
 </html>

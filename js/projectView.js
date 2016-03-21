@@ -126,7 +126,7 @@ projectView.readMoreButton = function(){
   };
 
   projectView.initIndexPage = function(){
-    projectView.navHandler();
+    // projectView.navHandler();
     Project.all.forEach(function(a){
     $('.portfolio').find('.grid').append(a.toHTML());
   });
