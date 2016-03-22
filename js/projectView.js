@@ -107,30 +107,35 @@ projectView.readMoreButton = function(){
   projectView.navHandler = function() {
 
     $('.nav-menu').on('click', 'li', function(e) {
-      e.preventDefault();
+      // e.preventDefault();
       $(this).parent().find('a').removeClass('activated');
       $(this).find('a').addClass('activated');
-      if ($(this).data('content') == 'home') {
-        $('section').show();
-      } else {
-
-        // console.log($(this).data('content'));
-        $('section').hide();
-        $('.' + $(this).data('content')).fadeIn();
-        if ($(this).data('content') == 'portfolio') {
-          console.log('test');
-          $('.filter').fadeIn();
-        }
-      }
+      // if ($(this).data('content') == 'home') {
+      //   $('section').show();
+      // } else {
+      //
+      //   // console.log($(this).data('content'));
+      //   $('section').hide();
+      //   $('.' + $(this).data('content')).fadeIn();
+      //   if ($(this).data('content') == 'portfolio') {
+      //     console.log('test');
+      //     $('.filter').fadeIn();
+      //   }
+      // }
     });
   };
 
   projectView.initIndexPage = function(){
-    // projectView.navHandler();
+    projectView.navHandler();
     Project.all.forEach(function(a){
     $('.portfolio').find('.grid').append(a.toHTML());
   });
 };
 
 module.projectView = projectView;
+
+$(document).ready(function() {
+    console.log('init page');
+    Project.fetchAll(projectView.initIndexPage);
+});
 })(window);
