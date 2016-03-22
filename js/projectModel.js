@@ -17,7 +17,7 @@
       Project.all.push(new Project(ele));
     })
   };
-  
+
   //******************************//
   //code reivew class-9
   //Refactorin the fetchAll: if the data is in localStorage, compare its eTag to the newest eTag to check whether or not
@@ -46,12 +46,18 @@
               Project.loadAll(rawData);
               //cache the data into the localStorage
               localStorage.rawData = JSON.stringify(rawData);
-              callback();
+              //render the indexpage. check if the content is already there
+              if ($('.portfolio').find('.grid').children('.col-4').length==0){
+                callback();
+              }
             });
 
           } else {
             Project.loadAll(JSON.parse(localStorage.rawData));
-            callback();
+            //render the indexpage. check if the content is already there
+            if ($('.portfolio').find('.grid').children('.col-4').length==0){
+              callback();
+            }
           }
         }
       });
@@ -74,8 +80,10 @@
         var cache = JSON.stringify(rawData);
         localStorage.rawData = cache;
 
-        //render the indexpage.
-        callback();
+        //render the indexpage. check if the content is already there
+        if ($('.portfolio').find('.grid').children('.col-4').length==0){
+          callback();
+        }
       });
     }
   }
