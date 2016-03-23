@@ -18,6 +18,7 @@
     $('section').hide();
     // console.log(abc);
     var section = ctx.params.section;
+    console.log(section);
     $('.' + section).fadeIn();
 
   };

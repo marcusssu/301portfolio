@@ -181,15 +181,15 @@ h3 {
   }
   .container .grid {
     .col-4:last-of-type {
-      padding-right: 1.5rem;
+      // padding-right: 1.5rem;
     }
     .col-4 {
-      opacity: 1;
-      transition: opacity 0.5s ease;
+      // opacity: 1;
+      // transition: opacity 0.5s ease;
     }
     .unselected {
-      opacity: 0.5;
-      transition: opacity 0.5s ease;
+      // opacity: 0.5;
+      // transition: opacity 0.5s ease;
     }
   }
   .project_item {
@@ -287,7 +287,31 @@ footer {
     }
   }
 }
-
+.github {
+  background-image: url("../img/greyzz/greyzz.png");
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  opacity: 1;
+  .container{
+    .grid{
+      .col-12{
+        .project_item {
+          p{
+             word-wrap: break-word;
+          }
+          padding: 1rem;
+          width: 100%;
+          display: block;
+          background-color: white;
+          height: auto;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
+}
 //media
 /****************************/
 @media (min-width:800px){
