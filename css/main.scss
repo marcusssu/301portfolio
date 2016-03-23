@@ -296,8 +296,14 @@ footer {
     .grid{
       .col-12{
         .project_item {
+          li{
+            list-style: none;
+          }
           p{
              word-wrap: break-word;
+          }
+          a{
+            text-decoration:none;
           }
           padding: 1rem;
           width: 100%;

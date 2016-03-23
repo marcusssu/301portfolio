@@ -9,8 +9,8 @@
     console.log($('.portfolio').find('.grid').children('.col-4').length);
     // if ($('.portfolio').find('.grid').find('.col-4')==false){
     Project.fetchAll(projectView.initIndexPage);
-    //   console.log(!$('.portfolio').find('.grid').find('.col-4'));
-    // }
+
+    repos.requestRepos(repoView.index);
 
   };
 
@@ -18,6 +18,9 @@
     $('section').hide();
     // console.log(abc);
     var section = ctx.params.section;
+    Project.fetchAll(projectView.initIndexPage);
+
+    repos.requestRepos(repoView.index);
     $('.' + section).fadeIn();
 
   };

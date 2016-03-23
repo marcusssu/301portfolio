@@ -262,32 +262,38 @@ footer {
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
     /* line 299, main.scss */
+    .github .container .grid .col-12 .project_item li {
+      list-style: none; }
+    /* line 302, main.scss */
     .github .container .grid .col-12 .project_item p {
       word-wrap: break-word; }
+    /* line 305, main.scss */
+    .github .container .grid .col-12 .project_item a {
+      text-decoration: none; }
 
 /****************************/
 @media (max-width: 960px) {
-  /* line 325, main.scss */
+  /* line 331, main.scss */
   .type {
     height: 5rem; }
 
-  /* line 328, main.scss */
+  /* line 334, main.scss */
   .portfolio .project_item .image .text-content {
     display: none; } }
 @media (max-width: 640px) {
-  /* line 336, main.scss */
+  /* line 342, main.scss */
   .portfolio .container .grid .col-4 {
     width: 50%; } }
 @media (max-width: 565px) {
-  /* line 341, main.scss */
+  /* line 347, main.scss */
   .portfolio .container .grid .col-4 .type {
     display: none; } }
 @media (max-width: 480px) {
-  /* line 346, main.scss */
+  /* line 352, main.scss */
   .portfolio .project_item .title {
     font-size: 1.5rem; } }
 @media (max-width: 400px) {
-  /* line 351, main.scss */
+  /* line 357, main.scss */
   .nav-menu li a {
     font-size: 1.3rem; } }
 
