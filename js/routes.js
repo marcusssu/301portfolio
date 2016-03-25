@@ -1,6 +1,6 @@
-page('/', Controller.showAll);
-// page('/about', Controller.showId('.about'));
-// page('/portfolio', Controller.showId('.portfolio'));
+page('/', Controller.loadProject,
+          Controller.showProject);
+
 page('/:section', Controller.showId);
 
 page();

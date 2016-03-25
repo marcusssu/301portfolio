@@ -2,6 +2,17 @@
 
 
   var projectView = {};
+  projectView.index =  function (projects){
+
+    $('.portfolio').find('.grid').empty();
+
+    projectView.navHandler();
+    projects.forEach(function(a) {
+      $('.portfolio').find('.grid').append(a.toHTML());
+    });
+  }
+
+
   projectView.populateFilters = function() {
     $('.portfolio').find('.col-12').each(function() {
 
